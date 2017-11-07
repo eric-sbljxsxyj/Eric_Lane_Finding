@@ -21,7 +21,7 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. 
+My pipeline consisted of these steps. 
 1. I converted the images to grayscale using "cv2.cvtColor". 
 2. Apply Gaussian smooth using "cv2.GaussianBlur"
 3. Apply Cannyedge using "cv2.Canny"
@@ -41,14 +41,15 @@ My pipeline consisted of 5 steps.
 
 ### 2. Identify potential shortcomings with your current pipeline
 
+First, in step 7, there might be orther ways to read the "hough lines of interest" or"end points of these lines" into a list without doing a second hough transform.
 
-One potential shortcoming would be what would happen when ... 
+Second, need to do more work to tackle the challenge video.
 
-Another shortcoming could be ...
+Third, the area of interest is fixed. If the camera moves too much, there might be issues.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+First, dig into HSV image space.
 
-Another potential improvement could be to ...
+Second,...
