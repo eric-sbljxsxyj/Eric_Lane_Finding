@@ -1,6 +1,6 @@
 # **Finding Lane Lines on the Road** 
 
-##Eric Cheng's Writeup 
+##Eric Cheng's Writeup## 
 
 ---
 
@@ -21,7 +21,7 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. 
+My pipeline consisted of these steps. 
 1. I converted the images to grayscale using "cv2.cvtColor". 
 2. Apply Gaussian smooth using "cv2.GaussianBlur"
 3. Apply Cannyedge using "cv2.Canny"
