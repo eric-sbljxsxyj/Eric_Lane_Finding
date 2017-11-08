@@ -1,6 +1,6 @@
 # **Finding Lane Lines on the Road** 
 
-##Eric Cheng's Writeup
+## Eric Cheng's Writeup
 
 ---
 
