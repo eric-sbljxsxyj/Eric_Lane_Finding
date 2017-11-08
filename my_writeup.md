@@ -1,6 +1,6 @@
 # **Finding Lane Lines on the Road** 
 
-##Eric Cheng's Writeup## 
+##Eric Cheng's Writeup
 
 ---
 
@@ -35,20 +35,14 @@ My pipeline consisted of these steps.
 11. Using given code to apply my image process pipline onto the videos. 
 
 
-
-![alt text][image1]
-
-
 ### 2. Identify potential shortcomings with your current pipeline
 
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
+1. Need to dig into HSV image and find out any alternatives to adjust this pipeline for more chanllenging scenirios; Get more reliable CannyEdge result.
+2. There might be other methords to store "hough lines of interest" or their "end points" into a list without doing a second hough transform;
+3. The trapezoid mask is fixed in the image. There might be issues is the camera position changed significantly.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+1. Improve the program to accommodate the challenge video.
 
-Another potential improvement could be to ...
