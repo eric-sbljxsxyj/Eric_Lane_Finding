@@ -26,7 +26,7 @@ My pipeline consisted of these steps.
 2. Apply Gaussian smooth using "cv2.GaussianBlur"
 3. Apply Cannyedge using "cv2.Canny"
 4. Apply hough tranform to draw lines on ablank image using"cv2.HoughLinesP" and "cv2.line"
-5. Define a trapesoide mask and draw it on the original images and adjust the mask. "cv2.polylines"
+5. Define a trapezoid mask and draw it on the original images and adjust the mask. "cv2.polylines"
 6. Keep area of interest and black out others. "cv2.fillPoly" and "cv2.bitwise_and"
 7. The lines of interest is left on a blank image. I did not know how to obtain these lines of interest with other methord. So I did a second Hough transform to obtain them as a list of end points.
 8. Then use these end points to average/extrapolate left lane and right lane. Slopes and Y axis intercepts were calculated using the end points. Highest Y position (smallest y value) was identified. Lowest Y position("img.shape[0]") is the bottom of the image. A line is defined by y=ax+b. With a,b, and highest and lowest Y position, two end points of a lane line are able to get.
